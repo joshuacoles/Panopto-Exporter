@@ -1,0 +1,3 @@
+*.rss
+node_modules
+/harness
