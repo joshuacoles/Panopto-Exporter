@@ -51,7 +51,7 @@ export async function createFeedFromFolder(panopto: PanoptoAccess, { targetID, f
     feed.addItem({
       guid: item.DeliveryID,
       title: item.SessionName,
-      link: item.IosVideoUrl,
+      link: item.ViewerUrl,
       date,
 
       enclosure: {

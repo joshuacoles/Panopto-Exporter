@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import { Credentials, PanoptoAccess, PanoptoInfo } from "./types";
+import { PanoptoInfo } from "./types";
 
 function isToken(credentials: PanoptoInfo["credentials"]): credentials is { token: string } {
   return 'token' in credentials;
