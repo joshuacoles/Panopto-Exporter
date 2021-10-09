@@ -1,7 +1,7 @@
 import got from "got";
 import { FolderData } from "./panoptoTypes/FolderData";
 import { PanoptoAccess } from "./types";
-import { readFile, writeFile } from 'fs/promises'
+import { readFile, writeFile, mkdir } from 'fs/promises'
 import { existsSync } from 'fs'
 
 // Folders we can't cache anything as we make a single call
@@ -61,6 +61,7 @@ export async function fromVideo(panopto: PanoptoAccess, videoId: string) {
   const data = { title, url };
 
   // if (panopto.shouldUseCache) {
+  //   if (!existsSync('./fetchCache')) await mkdir('./fetchCache');
   //   await writeFile(cachePath, JSON.stringify(data));
   // }
 
