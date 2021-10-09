@@ -13,6 +13,8 @@ export interface PanoptoAccess {
   baseUrl: string,
   token: string,
   copyrightAttribution: string,
+
+  shouldUseCache: boolean
 }
 
 export interface FolderTarget {
